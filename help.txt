@@ -1,0 +1,13 @@
+stoic version       : Prints currently installed version.
+stoic uninstall     : Removes stoic-cli from you machine.
+stoic update        : Updates stoic-cli to latest version.
+
+cdb <number>        : Change directory backward <number> times.
+                      <number> argument is optional. If no argument is provided, it will change one directory backwards.
+gr <directory>      : Go to <directory> from git root directory.
+                      <directory> argument is optional. If no argument is provided, it will set the git root directory as pwd.
+shc <key>           : Got to predefined path. Accepts exactly one argument as <key> and reads path from .stoic-shortcuts.
+mkcd <directory>    : Creates a directory with <directory> name and sets it as pwd.
+
+Create an issue if a bug is found or have an idea for a new feature/function.
+Create issue here > https://github.com/whostoic/stoic-cli/issues
