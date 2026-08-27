@@ -6,13 +6,13 @@ Shell utilities to navigate large git repos faster and reduce repetitive typing.
 
 ## Features
 
-* `cdb`  > jump backward multiple directories
-* `gr`  > jump to repo root + fuzzy navigate inside it
-* `shc` > jump to predefined paths
-* `mkcd` > create a directory and jump inside
-* Works with **bash** and **zsh**
-* Optional **fzf integration** for fast selection
-* Tab completion support
+- `cdb` > jump backward multiple directories
+- `gr` > jump to repo root + fuzzy navigate inside it
+- `shc` > jump to predefined paths
+- `mkcd` > create a directory and jump inside
+- Works with **bash** and **zsh**
+- Optional **fzf integration** for fast selection
+- Tab completion support
 
 ---
 
@@ -43,7 +43,7 @@ brew install fzf && $(brew --prefix)/opt/fzf/install
 ### Linux
 
 ```bash
-sudo apt install fzf # or > sudo dnf install fzf (fedora, centos, rhel, etc.) 
+sudo apt install fzf # or > sudo dnf install fzf (fedora, centos, rhel, etc.)
 ```
 
 or see installation here > https://github.com/junegunn/fzf#installation
@@ -65,6 +65,7 @@ cdb 3      # cd ../../../
 ### `gr` > Jump inside repo
 
 From anywhere inside your repo:
+
 > [ ! ] `gr` works **only inside Git repositories**. It will explicitly fail if used outside one.
 
 ```bash
@@ -79,8 +80,8 @@ gr ty         # fuzzy match (e.g. packages/typescript-config)
 
 If multiple matches exist:
 
-* Uses `fzf` if installed
-* Otherwise prints options
+- Uses `fzf` if installed
+- Otherwise prints options
 
 ---
 
@@ -96,8 +97,8 @@ mkcd app	# mkdir app && cd app
 
 Use `shc` as shortcuts manager. To use this:
 
-* Create a `.stoic-shortcuts` file in your git repo root.
-* Add shortcuts like below:
+- Create a `.stoic-shortcuts` file in your git repo root.
+- Add shortcuts like below:
 
 ```
 web=apps/web
@@ -113,22 +114,15 @@ key     path
 
 ---
 
-## How it works
+### `mkfile` > Create new file at given path
 
-* Detects repo root via `git`
-* Falls back to `apps/` or `packages/` structure
-* Uses `find` + fuzzy matching for navigation
+```bash
+mkfile path/to/file.txt
+# Similar: mkdir -p path/to && touch path/to/file.txt
 
----
-
-## Why?
-
-Reduce:
-
-* Repetitive `cd ../../..`
-* Manual searching in large monorepos
-* Typing multiple command to complete on action
-* Keyboard wear ;)
+mkfile path/to/file.txt "Hello World!"
+# Similar: mkdir -p path/to && printf '%s' "Hello World!" > path/to/file.txt
+```
 
 ---
 
@@ -147,13 +141,14 @@ stoic uninstall
 ```
 
 > If the `uninstall.sh` file is deleted by mistake or is no longer available:
->  * Either reinstall this tool and then uninstall (recommended)
->  * or create shell file in your `~/` directory and copy the content of the `uninstall.sh` file to your created file. Then make it executable and run the file.
+>
+> - Either reinstall this tool and then uninstall (recommended)
+> - or create shell file in your `~/` directory and copy the content of the `uninstall.sh` file to your created file. Then make it executable and run the file.
 
 ---
 
 ## Conclusion
 
-* Run `stoic` for help.
-* Create an issue for bugs or feature requests.
-* See `contributions.md`.
+- Run `stoic` for help.
+- Create an issue for bugs or feature requests.
+- See `contributions.md`.

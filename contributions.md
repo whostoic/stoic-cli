@@ -67,19 +67,20 @@ root/
 ### Shell Scripts
 
 **Code style:**
-* Use the command as file name for `/src/commands/*`.
-* Write or use helper function in `/src/helpers/*`.
-* Every helper function should start with `stoic_cli_helper__`, i.e. `stoic_cli_helper__descriptive_name.sh`
-* Every function file in `/src/commands` and `/src/helpers` should be a `.sh` file, no `bash` or `zsh` specific code.
-* Helper functions are not imported in other files, instead they are copied in the `functions.sh` file at the top. see [how it works](https://github.com/whostoic/stoic-cli/blob/main/how-it-works.md)
+
+- Use the command as file name for `/src/commands/*`.
+- Write or use helper function in `/src/helpers/*`.
+- Every helper function should start with `stoic_cli_helper__`, i.e. `stoic_cli_helper__descriptive_name.sh`
+- Every function file in `/src/commands` and `/src/helpers` should be a `.sh` file, no `bash` or `zsh` specific code.
+- Helper functions are not imported in other files, instead they are copied in the `functions.sh` file at the top. see [how it works](https://github.com/whostoic/stoic-cli/blob/main/how-it-works.md)
 
 **Please prefer:**
 
-* Commands faster to type
-* Clear naming
-* Safe quoting
-* Portable commands
-* Readable logic
+- Commands faster to type
+- Clear naming
+- Safe quoting
+- Portable commands
+- Readable logic
 
 ### Example
 
@@ -134,21 +135,22 @@ Open a new terminal and verify no errors appear.
 
 **Please keep PRs:**
 
-* Focused
-* Small
-* Explained clearly
+- Focused
+- Small
+- Explained clearly
 
 **Include:**
 
-* What changed
-* Why it changed
-* How you tested it
+- What changed
+- Why it changed
+- How you tested it
 
 ---
 
 # Code Style
 
 **Use simple shell style:**
+
 ```bash
 if [ -z "$root" ]; then
 return 1
@@ -160,11 +162,12 @@ fi
 ---
 
 # Things We Probably Don't Want
-* Heavy dependencies  
-* Analytics / tracking 
-* Bloated frameworks 
-* Magic behavior users can't understand 
-* Features unrelated to repo navigation
+
+- Heavy dependencies
+- Analytics / tracking
+- Bloated frameworks
+- Magic behavior users can't understand
+- Features unrelated to repo navigation
 
 ---
 
@@ -172,12 +175,12 @@ fi
 
 **Please include:**
 
-* OS
-* Shell (bash / zsh)
-* Command used
-* Expected result
-* Actual result
-* Error output
+- OS
+- Shell (bash / zsh)
+- Command used
+- Expected result
+- Actual result
+- Error output
 
 That saves time for everyone.
 
