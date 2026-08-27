@@ -4,18 +4,6 @@ Shell utilities to navigate large git repos faster and reduce repetitive typing.
 
 ---
 
-## Features
-
-- `cdb` > jump backward multiple directories
-- `gr` > jump to repo root + fuzzy navigate inside it
-- `shc` > jump to predefined paths
-- `mkcd` > create a directory and jump inside
-- Works with **bash** and **zsh**
-- Optional **fzf integration** for fast selection
-- Tab completion support
-
----
-
 ## Installation
 
 ### 1. Clone the repo

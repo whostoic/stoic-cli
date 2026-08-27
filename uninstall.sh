@@ -26,4 +26,4 @@ rm -rf "$INSTALL_DIR"
 
 echo "stoic-cli removed successfully."
 echo "Restart terminal or run:"
-echo "$RC_FILE"
+echo "source $RC_FILE"

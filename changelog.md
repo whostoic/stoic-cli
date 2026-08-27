@@ -13,3 +13,9 @@
 ### [UPDATE]
 
 - Renamed helpers to use `.helper.sh` file convention.
+
+# v1.1.1
+
+### [UPDATE]
+
+- Made `mkfile` to accepts multiple paths with contents.
